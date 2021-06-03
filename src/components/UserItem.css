@@ -1,0 +1,32 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+  }
+
+:root{
+	--c1:#462521;
+	--c2:#8A6552;
+	--c3:#FFE0B5;
+}
+
+
+.image{
+	width: 100px;
+	height: 100px;
+	display:table-row;
+	margin-left: 710px;
+}
+ button {
+	border-radius: 5px;
+	background-color: var(--c1);
+	color: var(--c3);
+ }
+ button:hover {
+	 background-color: var(--c3);
+	 color: var(--c1);
+	 cursor: pointer;
+ }
+
+ .user-item {
+	 font-size: 18px;
+ }
+ 

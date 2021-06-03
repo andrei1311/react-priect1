@@ -1,8 +1,41 @@
-/* Daca vrem ca aplicatia sa ocupe intreg viewport-ul. */
-.app {
-  min-height: 100vh;
+*, *::after, *::before {
+	box-sizing: border-box;
+  }
+
+:root{
+	--c1:#462521;
+	--c2:#8A6552;
+	--c3:#FFE0B5;
+}
+body {
+  padding: 0px;
+  margin: 0px;
 }
 
-.app h1 {
-  margin-top: 0;
+.app .container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container #color {
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.container .button {
+  flex-direction: column;
+  color: var(--c3);
+  font-size: 20px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: var(--c1);
+}
+
+.button:hover {
+  background-color: var(--c3);
+  color: var(--c1);
 }
